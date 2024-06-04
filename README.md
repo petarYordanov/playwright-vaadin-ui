@@ -9,7 +9,7 @@ Use Vaadin's Java web UI api with Springboot dependency injection to create view
 mvn clean install
 ```
 
-## Run Projec
+## Run Project
 
 Start PlaywrightVaadinApplication.java
 and
