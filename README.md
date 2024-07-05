@@ -13,6 +13,15 @@ So they can be called like:
 assertThat(page.locator(Locators.Elections.RATIO_STATS_PER_CADIDATE).first()).hasText(expectedStats);
 ```
 
+Using the Springboot Service and Dependency Injection concept to create test scenarios: https://github.com/petarYordanov/playwright-vaadin-ui/blob/master/src/main/java/com/example/hello_vaadin/automation/ElectionsAutomationService.java
+
+Cool thing about Playwright is the assertion api that comes with the framework, so in that service you may exploit **AssertionFailedError** and customize it
+
+The dependency injection from the Service allows the view from Vaadin's api to generate web view in Java that's only restricted by your imagination:
+https://github.com/petarYordanov/playwright-vaadin-ui/blob/master/src/main/java/com/example/hello_vaadin/automation/ElectAutoView.java
+
+
+
 ## Installation
 
 
